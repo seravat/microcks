@@ -1,0 +1,2629 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Service to retrieve Military Land Equipment details. Resource Details - \n /actSecUsage\n /activity\n /assetFleetIdents\n /calculatedOperParam\n /fleetIdents\n /instances\n /MODCodes\n /MROFault\n /MROMaintFault\n /maintAssoc\n /maintEnvHistory\n /maintHistory\n /nonEventUsage\n /organisation\n /partType\n /RATime\n /repairActSparesUsed\n/repairActs\n /supplyIssueID\n /typeUsageCounters\n /workRequest\n",
+    "version" : "v1",
+    "title" : "Mil-Equipment"
+  },
+  "host" : "pp-api.ahe.r.mil.uk",
+  "basePath" : "/gateway/Mil-Equipment/v1",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "security" : [ {
+    "oAuth2Token" : [ ]
+  } ],
+  "paths" : {
+    "/MROMaintFault" : {
+      "get" : {
+        "operationId" : "MROMaintFault_GET_12",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MROMaintFault_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/activity" : {
+      "get" : {
+        "operationId" : "Activity_GET_1",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/Activity_GET_response"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/RATime" : {
+      "get" : {
+        "operationId" : "RATime_GET_16",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/RATime_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "updatedDate",
+        "in" : "query",
+        "description" : "",
+        "required" : false,
+        "type" : "string"
+      }, {
+        "name" : "pageSize",
+        "in" : "query",
+        "description" : "",
+        "required" : false,
+        "type" : "string"
+      }, {
+        "name" : "pageNumber",
+        "in" : "query",
+        "required" : false,
+        "type" : "string"
+      } ]
+    },
+    "/nonEventUsage" : {
+      "get" : {
+        "operationId" : "NonEventUsage_GET_13",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/NonEventUsage_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/fleetIdents" : {
+      "get" : {
+        "operationId" : "FleetIdents_GET_5",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/FleetIdents_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/supplyIssueID" : {
+      "get" : {
+        "operationId" : "SupplyIssueID_GET_21",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/SupplyIssueID_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/MROFault" : {
+      "get" : {
+        "operationId" : "MROFault_GET_11",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MROFault_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/organisation" : {
+      "get" : {
+        "operationId" : "Organisation_GET_14",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/Organisation_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/maintHistory" : {
+      "get" : {
+        "operationId" : "MaintHistory_GET_9",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MaintHistory_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/actSecUsage" : {
+      "get" : {
+        "operationId" : "ActSecUsage_GET_2",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/ActSecUsage_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/repairActSparesUsed" : {
+      "get" : {
+        "operationId" : "RepairActSparesUsed_GET_18",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/RepairActSparesUsed_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/workRequest" : {
+      "get" : {
+        "operationId" : "WorkRequest_GET_23",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/WorkRequest_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/typeUsageCounters" : {
+      "get" : {
+        "operationId" : "TypeUsageCounters_GET_22",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/TypeUsageCounters_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/maintEnvHistory" : {
+      "get" : {
+        "operationId" : "MaintEnvHistory_GET_8",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MaintEnvHistory_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/MODCodes" : {
+      "get" : {
+        "operationId" : "MODCodes_GET_10",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MODCodes_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/assetFleetIdents" : {
+      "get" : {
+        "operationId" : "AssetFleetIdents_GET_3",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/AssetFleetIdents_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/instances" : {
+      "get" : {
+        "operationId" : "Instances_GET_6",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/Instances_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/partTypes" : {
+      "get" : {
+        "operationId" : "PartType_GET_15",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/PartType_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/maintAssoc" : {
+      "get" : {
+        "operationId" : "MaintAssoc_GET_7",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MaintAssoc_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/calculatedOperParam" : {
+      "get" : {
+        "operationId" : "CalculatedOperParam_GET_4",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/CalculatedOperParam_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    },
+    "/repairActs" : {
+      "get" : {
+        "operationId" : "RepairActs_GET_17",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNumber",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "pageSize",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "updatedDate",
+          "in" : "formData",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/RepairActs_GET_response_1"
+            }
+          },
+          "401" : {
+            "description" : "Access Denied"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions" : {
+    "oAuth2Token" : {
+      "type" : "oauth2",
+      "tokenUrl" : "https://pp-api.ahe.r.mil.ukinvoke/pub.apigateway.oauth2/getAccessToken",
+      "flow" : "application",
+      "scopes" : {
+        "89097a1a-0477-44b0-8cd0-90d1b7e66300" : ""
+      }
+    }
+  },
+  "definitions" : {
+    "MaintAssoc_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getMaintAssocDetailsResponse" ],
+      "properties" : {
+        "getMaintAssocDetailsResponse" : {
+          "$ref" : "#/definitions/getMaintAssocDetailsResponse"
+        }
+      }
+    },
+    "RATime_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getRATimeDetailsResponse" ],
+      "properties" : {
+        "getRATimeDetailsResponse" : {
+          "$ref" : "#/definitions/getRATimeDetailsResponse"
+        }
+      }
+    },
+    "getMROFaultDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getMROFault" ],
+      "properties" : {
+        "getMROFault" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesMROFault"
+          }
+        }
+      }
+    },
+    "JamesFleetIdents" : {
+      "type" : "object",
+      "required" : [ "assetDSID", "assetID", "deleteFlag", "fleetID", "fleetIdentID", "lastQueriedDate", "lfdwID", "readinessCode" ],
+      "properties" : {
+        "assetDSID" : {
+          "type" : "string"
+        },
+        "assetID" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "fleetID" : {
+          "type" : "string"
+        },
+        "fleetIdentID" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "readinessCode" : {
+          "type" : "string"
+        }
+      }
+    },
+    "getMaintAssocDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getMaintAssoc" ],
+      "properties" : {
+        "getMaintAssoc" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesMaintAssoc"
+          }
+        }
+      }
+    },
+    "JamesMROFault" : {
+      "type" : "object",
+      "required" : [ "actualStartDate", "assetID", "comments", "dateFaultOccurred", "dateRecorded", "dateRectified", "deleteFlag", "estimatedRepairTime", "faultActualReportedBy", "faultClosedByName", "faultClosedByRank", "faultClosedByService", "faultClosedByTrade", "faultDescription", "faultDisplayID", "faultGroup", "faultID", "faultRepairLevel", "faultReportedByRank", "faultReportedByService", "faultReportedByTrade", "faultState", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "plannedStartDate", "primaryUsageatClose", "primaryUsageatReport", "primaryUsageatStart", "reasonForWork", "repairUnit", "repairUnitUIN", "sf", "workCategory", "workObjCompletionDate" ],
+      "properties" : {
+        "actualStartDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "assetID" : {
+          "type" : "string"
+        },
+        "comments" : {
+          "type" : "string"
+        },
+        "dateFaultOccurred" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "dateRecorded" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "dateRectified" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "estimatedRepairTime" : {
+          "type" : "string"
+        },
+        "faultActualReportedBy" : {
+          "type" : "string"
+        },
+        "faultClosedByName" : {
+          "type" : "string"
+        },
+        "faultClosedByRank" : {
+          "type" : "string"
+        },
+        "faultClosedByService" : {
+          "type" : "string"
+        },
+        "faultClosedByTrade" : {
+          "type" : "string"
+        },
+        "faultDescription" : {
+          "type" : "string"
+        },
+        "faultDisplayID" : {
+          "type" : "string"
+        },
+        "faultGroup" : {
+          "type" : "string"
+        },
+        "faultID" : {
+          "type" : "string"
+        },
+        "faultRepairLevel" : {
+          "type" : "string"
+        },
+        "faultReportedByRank" : {
+          "type" : "string"
+        },
+        "faultReportedByService" : {
+          "type" : "string"
+        },
+        "faultReportedByTrade" : {
+          "type" : "string"
+        },
+        "faultState" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "plannedStartDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "primaryUsageatClose" : {
+          "type" : "string"
+        },
+        "primaryUsageatReport" : {
+          "type" : "string"
+        },
+        "primaryUsageatStart" : {
+          "type" : "string"
+        },
+        "reasonForWork" : {
+          "type" : "string"
+        },
+        "repairUnit" : {
+          "type" : "string"
+        },
+        "repairUnitUIN" : {
+          "type" : "string"
+        },
+        "sf" : {
+          "type" : "string"
+        },
+        "workCategory" : {
+          "type" : "string"
+        },
+        "workObjCompletionDate" : {
+          "type" : "string",
+          "format" : "date"
+        }
+      }
+    },
+    "getSupplyIssueIDResponse" : {
+      "type" : "object",
+      "required" : [ "getSupplyIssueID" ],
+      "properties" : {
+        "getSupplyIssueID" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesSupplyIssueID"
+          }
+        }
+      }
+    },
+    "Instances_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getEquipmentDetailsResponse" ],
+      "properties" : {
+        "getEquipmentDetailsResponse" : {
+          "$ref" : "#/definitions/getEquipmentDetailsResponse"
+        }
+      }
+    },
+    "getOrganisationDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getOrganisation" ],
+      "properties" : {
+        "getOrganisation" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesOrganisation"
+          }
+        }
+      }
+    },
+    "TypeUsageCounters_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getTypeUsageCountersResponse" ],
+      "properties" : {
+        "getTypeUsageCountersResponse" : {
+          "$ref" : "#/definitions/getTypeUsageCountersResponse"
+        }
+      }
+    },
+    "AssetFleetIdents_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getAssetFleetIdentsDetails" ],
+      "properties" : {
+        "getAssetFleetIdentsDetails" : {
+          "$ref" : "#/definitions/getAssetFleetIdentsDetails"
+        }
+      }
+    },
+    "JamesActsecUsage" : {
+      "type" : "object",
+      "required" : [ "assetID", "deleteFlag", "endValue", "eventID", "eventUsage", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "sfFlag", "startValue", "usageParameterValue" ],
+      "properties" : {
+        "assetID" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "endValue" : {
+          "type" : "string"
+        },
+        "eventID" : {
+          "type" : "string"
+        },
+        "eventUsage" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "sfFlag" : {
+          "type" : "string"
+        },
+        "startValue" : {
+          "type" : "string"
+        },
+        "usageParameterValue" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RoleFitAsset_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getRoleFitAssetDetailsResponse" ],
+      "properties" : {
+        "getRoleFitAssetDetailsResponse" : {
+          "$ref" : "#/definitions/getRoleFitAssetDetailsResponse"
+        }
+      }
+    },
+    "JamesMaintAssoc" : {
+      "type" : "object",
+      "required" : [ "counter", "deleteFlag", "estWorkObjectRepairTime", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "maintInterval", "maintenanceGroup", "name", "nsn", "partTypeID", "repairLevel", "ruleID", "templateID", "trigType" ],
+      "properties" : {
+        "counter" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "estWorkObjectRepairTime" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "maintInterval" : {
+          "type" : "string"
+        },
+        "maintenanceGroup" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "nsn" : {
+          "type" : "string"
+        },
+        "partTypeID" : {
+          "type" : "string"
+        },
+        "repairLevel" : {
+          "type" : "string"
+        },
+        "ruleID" : {
+          "type" : "string"
+        },
+        "templateID" : {
+          "type" : "string"
+        },
+        "trigType" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MODCodes_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getMODCodesDetailsResponse" ],
+      "properties" : {
+        "getMODCodesDetailsResponse" : {
+          "$ref" : "#/definitions/getMODCodesDetailsResponse"
+        }
+      }
+    },
+    "MaintEnvHistory_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getMaintEnvHistoryDetailsResponse" ],
+      "properties" : {
+        "getMaintEnvHistoryDetailsResponse" : {
+          "$ref" : "#/definitions/getMaintEnvHistoryDetailsResponse"
+        }
+      }
+    },
+    "JamesMaintEnvHist" : {
+      "type" : "object",
+      "required" : [ "assetID", "dateIN", "dateOUT", "deleteFlag", "envHistID", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "maintEnvironmentName" ],
+      "properties" : {
+        "assetID" : {
+          "type" : "string"
+        },
+        "dateIN" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "dateOUT" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "envHistID" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "maintEnvironmentName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Activity_GET_response" : {
+      "type" : "object",
+      "required" : [ "GetActivityDetails" ],
+      "properties" : {
+        "GetActivityDetails" : {
+          "$ref" : "#/definitions/GetActivityDetails"
+        }
+      }
+    },
+    "NonEventUsage_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "geNonEventUsageDetailsResponse" ],
+      "properties" : {
+        "geNonEventUsageDetailsResponse" : {
+          "$ref" : "#/definitions/geNonEventUsageDetailsResponse"
+        }
+      }
+    },
+    "getRepActSparesUsedDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getRepActSparesUsed" ],
+      "properties" : {
+        "getRepActSparesUsed" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesRepActSparesUsed"
+          }
+        }
+      }
+    },
+    "getRepairActsDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getRepairActs" ],
+      "properties" : {
+        "getRepairActs" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesRepairActs"
+          }
+        }
+      }
+    },
+    "getMROMaintMODFaultDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getMROMaintMODFault" ],
+      "properties" : {
+        "getMROMaintMODFault" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesMROMaintMODFault"
+          }
+        }
+      }
+    },
+    "RepairActSparesUsed_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getRepActSparesUsedDetailsResponse" ],
+      "properties" : {
+        "getRepActSparesUsedDetailsResponse" : {
+          "$ref" : "#/definitions/getRepActSparesUsedDetailsResponse"
+        }
+      }
+    },
+    "JamesMaintHistory" : {
+      "type" : "object",
+      "required" : [ "actualCompletionDate", "assetID", "cumulativeatClosed", "currentUsageatClose", "dateRecorded", "deleteFlag", "faultID", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "maintEnvironmentName", "maintHistID", "maintTemplateID", "maintUsageID", "maintenanceStatus", "operParamDisplayID", "repairActionID" ],
+      "properties" : {
+        "actualCompletionDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "assetID" : {
+          "type" : "string"
+        },
+        "cumulativeatClosed" : {
+          "type" : "string"
+        },
+        "currentUsageatClose" : {
+          "type" : "string"
+        },
+        "dateRecorded" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "faultID" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "maintEnvironmentName" : {
+          "type" : "string"
+        },
+        "maintHistID" : {
+          "type" : "string"
+        },
+        "maintTemplateID" : {
+          "type" : "string"
+        },
+        "maintUsageID" : {
+          "type" : "string"
+        },
+        "maintenanceStatus" : {
+          "type" : "string"
+        },
+        "operParamDisplayID" : {
+          "type" : "string"
+        },
+        "repairActionID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "getRoleFitDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getRoleFitDetails" ],
+      "properties" : {
+        "getRoleFitDetails" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesRoleFitDetails"
+          }
+        }
+      }
+    },
+    "JamesActivity" : {
+      "type" : "object",
+      "required" : [ "activityPlannedEnd", "activityPlannedStart", "activitySpecialInstructions", "activityType", "activityTypeDescription", "assetID", "atudControlNumber", "atudEndDate", "atudStartDate", "authInitials", "authServiceNumber", "authSurname", "deleteFlag", "description", "destination", "driverName", "driverRank", "driverServiceNumber", "endODO", "eventID", "eventName", "eventOwnerName", "eventOwnerUIN", "eventUsage", "fuelDrawnSum", "lastQueriedDate", "startODO", "unitIdentityNumber", "usageCounterType", "usageCounterUnit" ],
+      "properties" : {
+        "activityPlannedEnd" : {
+          "type" : "string",
+          "format" : "date",
+          "description" : "Planned end of the ATUD."
+        },
+        "activityPlannedStart" : {
+          "type" : "string",
+          "format" : "date",
+          "description" : "Planned start of the ATUD."
+        },
+        "activitySpecialInstructions" : {
+          "type" : "string",
+          "description" : "User entered special instruction."
+        },
+        "activityType" : {
+          "type" : "string"
+        },
+        "activityTypeDescription" : {
+          "type" : "string"
+        },
+        "assetID" : {
+          "type" : "string",
+          "description" : "Unique identifier of a serialised part."
+        },
+        "atudControlNumber" : {
+          "type" : "string",
+          "description" : "A JAMES generated unique id for an ATUD based on Holding unit/date."
+        },
+        "atudEndDate" : {
+          "type" : "string",
+          "format" : "date",
+          "description" : "The time and date that an 'Authority to use Document' (ATUD) was closed."
+        },
+        "atudStartDate" : {
+          "type" : "string",
+          "format" : "date",
+          "description" : "The time and date that an 'Authority to use Document' (ATUD) was opened."
+        },
+        "authInitials" : {
+          "type" : "string"
+        },
+        "authServiceNumber" : {
+          "type" : "string",
+          "description" : "The service number of the person authorising the ATUD."
+        },
+        "authSurname" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string",
+          "description" : "Record deletion flag. 'Y' - Deleted 'N' - Existing."
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "destination" : {
+          "type" : "string"
+        },
+        "driverName" : {
+          "type" : "string"
+        },
+        "driverRank" : {
+          "type" : "string"
+        },
+        "driverServiceNumber" : {
+          "type" : "string"
+        },
+        "endODO" : {
+          "type" : "string",
+          "description" : "The usage recorded against the platform at ATUD_END_DATE(Primary usage counter only)"
+        },
+        "eventID" : {
+          "type" : "string",
+          "description" : "Unique identifier for a JAMES event (Usage of a vehicle/platform)"
+        },
+        "eventName" : {
+          "type" : "string",
+          "description" : "Assigned name fo the event.(Entered at event creation.)"
+        },
+        "eventOwnerName" : {
+          "type" : "string",
+          "description" : "The name of the unit to whom the platform belongs."
+        },
+        "eventOwnerUIN" : {
+          "type" : "string",
+          "description" : "The unit identity number(UIN) of the platform ownder."
+        },
+        "eventUsage" : {
+          "type" : "string",
+          "description" : "Difference between END_ODO and START_ODO (Primary usage counter only)"
+        },
+        "fuelDrawnSum" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string",
+          "description" : "Record last updated."
+        },
+        "startODO" : {
+          "type" : "string",
+          "description" : "The usage recorded against the platform at ATUD_START_DATE(Primary usage counter only)"
+        },
+        "unitIdentityNumber" : {
+          "type" : "string",
+          "description" : "The unit identity number of the platform owner.(The unit it belongs too);"
+        },
+        "usageCounterType" : {
+          "type" : "string",
+          "description" : "The type of usage recorded agains the TAUD (Udually ODO- Odometer)"
+        },
+        "usageCounterUnit" : {
+          "type" : "string",
+          "description" : "The counter for the platform involved. Eg. Kilometers/Miles."
+        }
+      }
+    },
+    "JamesRATime" : {
+      "type" : "object",
+      "required" : [ "certifier", "deleteFlag", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "raTimeID", "rank", "repairActionID", "repairerName", "repairerTime", "serviceNumber", "sf", "trade" ],
+      "properties" : {
+        "certifier" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "raTimeID" : {
+          "type" : "string"
+        },
+        "rank" : {
+          "type" : "string"
+        },
+        "repairActionID" : {
+          "type" : "string"
+        },
+        "repairerName" : {
+          "type" : "string"
+        },
+        "repairerTime" : {
+          "type" : "string"
+        },
+        "serviceNumber" : {
+          "type" : "string"
+        },
+        "sf" : {
+          "type" : "string"
+        },
+        "trade" : {
+          "type" : "string"
+        }
+      }
+    },
+    "SupplyIssueID_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getSupplyIssueIDResponse" ],
+      "properties" : {
+        "getSupplyIssueIDResponse" : {
+          "$ref" : "#/definitions/getSupplyIssueIDResponse"
+        }
+      }
+    },
+    "GetActivityDetails" : {
+      "type" : "object",
+      "required" : [ "GetActivityDetailsResponse" ],
+      "properties" : {
+        "GetActivityDetailsResponse" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesActivity"
+          }
+        }
+      }
+    },
+    "JamesRoleFitAsset" : {
+      "type" : "object",
+      "required" : [ "assetID", "deleteFlag", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "roleFitID" ],
+      "properties" : {
+        "assetID" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "roleFitID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "WorkRequest_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getWorkRequestDetailsResponse" ],
+      "properties" : {
+        "getWorkRequestDetailsResponse" : {
+          "$ref" : "#/definitions/getWorkRequestDetailsResponse"
+        }
+      }
+    },
+    "Organisation_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getOrganisationDetailsResponse" ],
+      "properties" : {
+        "getOrganisationDetailsResponse" : {
+          "$ref" : "#/definitions/getOrganisationDetailsResponse"
+        }
+      }
+    },
+    "getRoleFitAssetDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getRoleFitAsset" ],
+      "properties" : {
+        "getRoleFitAsset" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesRoleFitAsset"
+          }
+        }
+      }
+    },
+    "JamesMROMaintMODFault" : {
+      "type" : "object",
+      "required" : [ "actualStartDate", "assetID", "dateFaultOccurred", "deleteFlag", "estimatedRepairTime", "faultClosedByName", "faultClosedByRank", "faultClosedByService", "faultClosedByTrade", "faultDescription", "faultID", "faultRepairLevel", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "plannedStartDate", "reasonForWork", "repairSection", "repairSectionLocation", "repairUnit", "repairUnitUIN", "workCategory", "workObjCompletionDate" ],
+      "properties" : {
+        "actualStartDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "assetID" : {
+          "type" : "string"
+        },
+        "dateFaultOccurred" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "estimatedRepairTime" : {
+          "type" : "string"
+        },
+        "faultClosedByName" : {
+          "type" : "string"
+        },
+        "faultClosedByRank" : {
+          "type" : "string"
+        },
+        "faultClosedByService" : {
+          "type" : "string"
+        },
+        "faultClosedByTrade" : {
+          "type" : "string"
+        },
+        "faultDescription" : {
+          "type" : "string"
+        },
+        "faultID" : {
+          "type" : "string"
+        },
+        "faultRepairLevel" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "plannedStartDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "reasonForWork" : {
+          "type" : "string"
+        },
+        "repairSection" : {
+          "type" : "string"
+        },
+        "repairSectionLocation" : {
+          "type" : "string"
+        },
+        "repairUnit" : {
+          "type" : "string"
+        },
+        "repairUnitUIN" : {
+          "type" : "string"
+        },
+        "workCategory" : {
+          "type" : "string"
+        },
+        "workObjCompletionDate" : {
+          "type" : "string",
+          "format" : "date"
+        }
+      }
+    },
+    "JamesWorkRequests" : {
+      "type" : "object",
+      "required" : [ "deleteFlag", "faultID", "jobCardStatus", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "repairOrganisation", "requiredByDate", "sf", "workRequestClosedDate", "workRequestID" ],
+      "properties" : {
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "faultID" : {
+          "type" : "string"
+        },
+        "jobCardStatus" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "repairOrganisation" : {
+          "type" : "string"
+        },
+        "requiredByDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "sf" : {
+          "type" : "string"
+        },
+        "workRequestClosedDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "workRequestID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "getFleetIdentsDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getAssetFleetIdents" ],
+      "properties" : {
+        "getAssetFleetIdents" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesFleetIdents"
+          }
+        }
+      }
+    },
+    "getMaintEnvHistoryDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getMaintEnvHistory" ],
+      "properties" : {
+        "getMaintEnvHistory" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesMaintEnvHist"
+          }
+        }
+      }
+    },
+    "JamesCalculatedOperParam" : {
+      "type" : "object",
+      "required" : [ "calculationFormula", "deleteFlag", "lastQueriedDate", "level1Desc", "level2Desc", "level3Desc", "nsn", "operParamDSID", "usageParamCode", "usageParameterName" ],
+      "properties" : {
+        "calculationFormula" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "level1Desc" : {
+          "type" : "string"
+        },
+        "level2Desc" : {
+          "type" : "string"
+        },
+        "level3Desc" : {
+          "type" : "string"
+        },
+        "nsn" : {
+          "type" : "string"
+        },
+        "operParamDSID" : {
+          "type" : "string"
+        },
+        "usageParamCode" : {
+          "type" : "string"
+        },
+        "usageParameterName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RepairActs_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getRepairActsDetailsResponse" ],
+      "properties" : {
+        "getRepairActsDetailsResponse" : {
+          "$ref" : "#/definitions/getRepairActsDetailsResponse"
+        }
+      }
+    },
+    "JamesOrganisation" : {
+      "type" : "object",
+      "required" : [ "deleteFlag", "lastQueriedDate", "lastUpdated", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "opcomOrganisationUID", "opcomUnitID", "organisationDSID", "organisationID", "organisationLevelType", "organisationName", "organisationShortName", "organisationUIN", "parentOrganisationDSID", "parentOrganisationID", "parentOrganisationName", "precedenceCode", "sf" ],
+      "properties" : {
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lastUpdated" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "opcomOrganisationUID" : {
+          "type" : "string"
+        },
+        "opcomUnitID" : {
+          "type" : "string"
+        },
+        "organisationDSID" : {
+          "type" : "string"
+        },
+        "organisationID" : {
+          "type" : "string"
+        },
+        "organisationLevelType" : {
+          "type" : "string"
+        },
+        "organisationName" : {
+          "type" : "string"
+        },
+        "organisationShortName" : {
+          "type" : "string"
+        },
+        "organisationUIN" : {
+          "type" : "string"
+        },
+        "parentOrganisationDSID" : {
+          "type" : "string"
+        },
+        "parentOrganisationID" : {
+          "type" : "string"
+        },
+        "parentOrganisationName" : {
+          "type" : "string"
+        },
+        "precedenceCode" : {
+          "type" : "string"
+        },
+        "sf" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MROFault_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getMROFaultDetailsResponse" ],
+      "properties" : {
+        "getMROFaultDetailsResponse" : {
+          "$ref" : "#/definitions/getMROFaultDetailsResponse"
+        }
+      }
+    },
+    "getEquipmentDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getEquipment" ],
+      "properties" : {
+        "getEquipment" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesEquipment"
+          }
+        }
+      }
+    },
+    "getTypeUsageCountersResponse" : {
+      "type" : "object",
+      "required" : [ "getTypeUsageCounters" ],
+      "properties" : {
+        "getTypeUsageCounters" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesTypeUsageCounters"
+          }
+        }
+      }
+    },
+    "CalculatedOperParam_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getCalculatedOperParamResponse" ],
+      "properties" : {
+        "getCalculatedOperParamResponse" : {
+          "$ref" : "#/definitions/getCalculatedOperParamResponse"
+        }
+      }
+    },
+    "getMODCodesDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getMODCodes" ],
+      "properties" : {
+        "getMODCodes" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesMODCodes"
+          }
+        }
+      }
+    },
+    "getRATimeDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getRATime" ],
+      "properties" : {
+        "getRATime" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesRATime"
+          }
+        }
+      }
+    },
+    "getCalculatedOperParamResponse" : {
+      "type" : "object",
+      "required" : [ "getCalculatedOperParams" ],
+      "properties" : {
+        "getCalculatedOperParams" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesCalculatedOperParam"
+          }
+        }
+      }
+    },
+    "JamesPartType" : {
+      "type" : "object",
+      "required" : [ "commonESPNumber", "deleteFlag", "designGrossVehicleWeight", "dgvw", "equipWeightType", "equipmentCategory", "equipmentFamilyGroup", "equipmentHeight", "equipmentLength", "equipmentType", "equipmentUnladenWeight", "equipmentWidth", "espCommon", "espNumber", "espSpecific", "fuelType", "gtw", "iptUIN", "lastQueriedDate", "learCode", "learCodeDesc", "learCodeDescription", "level1Desc", "level2Desc", "level3Desc", "level4Desc", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "mac", "mam", "nsn", "partTypeID", "preferredSupport", "primaryUsageCounter", "ptName", "ptUIN", "spareCost", "supportDetails", "type", "ulw" ],
+      "properties" : {
+        "commonESPNumber" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "designGrossVehicleWeight" : {
+          "type" : "string"
+        },
+        "dgvw" : {
+          "type" : "string"
+        },
+        "equipWeightType" : {
+          "type" : "string"
+        },
+        "equipmentCategory" : {
+          "type" : "string"
+        },
+        "equipmentFamilyGroup" : {
+          "type" : "string"
+        },
+        "equipmentHeight" : {
+          "type" : "string"
+        },
+        "equipmentLength" : {
+          "type" : "string"
+        },
+        "equipmentType" : {
+          "type" : "string"
+        },
+        "equipmentUnladenWeight" : {
+          "type" : "string"
+        },
+        "equipmentWidth" : {
+          "type" : "string"
+        },
+        "espCommon" : {
+          "type" : "string"
+        },
+        "espNumber" : {
+          "type" : "string"
+        },
+        "espSpecific" : {
+          "type" : "string"
+        },
+        "fuelType" : {
+          "type" : "string"
+        },
+        "gtw" : {
+          "type" : "string"
+        },
+        "iptUIN" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "learCode" : {
+          "type" : "string"
+        },
+        "learCodeDesc" : {
+          "type" : "string"
+        },
+        "learCodeDescription" : {
+          "type" : "string"
+        },
+        "level1Desc" : {
+          "type" : "string"
+        },
+        "level2Desc" : {
+          "type" : "string"
+        },
+        "level3Desc" : {
+          "type" : "string"
+        },
+        "level4Desc" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "mac" : {
+          "type" : "string"
+        },
+        "mam" : {
+          "type" : "string"
+        },
+        "nsn" : {
+          "type" : "string"
+        },
+        "partTypeID" : {
+          "type" : "string"
+        },
+        "preferredSupport" : {
+          "type" : "string"
+        },
+        "primaryUsageCounter" : {
+          "type" : "string"
+        },
+        "ptName" : {
+          "type" : "string"
+        },
+        "ptUIN" : {
+          "type" : "string"
+        },
+        "spareCost" : {
+          "type" : "string"
+        },
+        "supportDetails" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "ulw" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MROMaintFault_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getMROMaintMODFaultDetailsResponse" ],
+      "properties" : {
+        "getMROMaintMODFaultDetailsResponse" : {
+          "$ref" : "#/definitions/getMROMaintMODFaultDetailsResponse"
+        }
+      }
+    },
+    "geNonEventUsageDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getNonEventUsage" ],
+      "properties" : {
+        "getNonEventUsage" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesNonEventUsage"
+          }
+        }
+      }
+    },
+    "getWorkRequestDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getWorkRequest" ],
+      "properties" : {
+        "getWorkRequest" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesWorkRequests"
+          }
+        }
+      }
+    },
+    "JamesAssetFleetIdents" : {
+      "type" : "object",
+      "required" : [ "assetDSID", "assetID", "deleteFlag", "fleetID", "fleetIdentID", "lastQueriedDate", "lfdwID", "readinessCode" ],
+      "properties" : {
+        "assetDSID" : {
+          "type" : "string"
+        },
+        "assetID" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "fleetID" : {
+          "type" : "string"
+        },
+        "fleetIdentID" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "readinessCode" : {
+          "type" : "string"
+        }
+      }
+    },
+    "PartType_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getPartTypeDetailsResponse" ],
+      "properties" : {
+        "getPartTypeDetailsResponse" : {
+          "$ref" : "#/definitions/getPartTypeDetailsResponse"
+        }
+      }
+    },
+    "JamesNonEventUsage" : {
+      "type" : "object",
+      "required" : [ "assetID", "deleteFlag", "endValue", "eventUsage", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "logDate", "sf", "startValue", "usageParameterName" ],
+      "properties" : {
+        "assetID" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "endValue" : {
+          "type" : "string"
+        },
+        "eventUsage" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "logDate" : {
+          "type" : "string"
+        },
+        "sf" : {
+          "type" : "string"
+        },
+        "startValue" : {
+          "type" : "string"
+        },
+        "usageParameterName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "JamesSupplyIssueID" : {
+      "type" : "object",
+      "required" : [ "deleteFlag", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "repairActionDSID", "requisitionID", "sf", "storesRequisitionDate", "supplyChainIssueID" ],
+      "properties" : {
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "repairActionDSID" : {
+          "type" : "string"
+        },
+        "requisitionID" : {
+          "type" : "string"
+        },
+        "sf" : {
+          "type" : "string"
+        },
+        "storesRequisitionDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "supplyChainIssueID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MaintHistory_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getMaintHistoryDetailsResponse" ],
+      "properties" : {
+        "getMaintHistoryDetailsResponse" : {
+          "$ref" : "#/definitions/getMaintHistoryDetailsResponse"
+        }
+      }
+    },
+    "JamesMODCodes" : {
+      "type" : "object",
+      "required" : [ "asepNumberSpecific", "deleteFlag", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "modCode", "modDesc", "modID", "nsn", "partTypeID" ],
+      "properties" : {
+        "asepNumberSpecific" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "modCode" : {
+          "type" : "string"
+        },
+        "modDesc" : {
+          "type" : "string"
+        },
+        "modID" : {
+          "type" : "string"
+        },
+        "nsn" : {
+          "type" : "string"
+        },
+        "partTypeID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ActSecUsage_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "GetActSecUsageDetailsResponse" ],
+      "properties" : {
+        "GetActSecUsageDetailsResponse" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesActsecUsage"
+          }
+        }
+      }
+    },
+    "JamesRoleFitDetails" : {
+      "type" : "object",
+      "required" : [ "altPartTypeID", "assetID", "dateUpdated", "fitPartTypeID", "isDeleted", "isPTControlled", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "mandatoryPosition", "roleFitCode", "roleFitDescription", "roleFitID", "stateIfMissing", "structurePosition" ],
+      "properties" : {
+        "altPartTypeID" : {
+          "type" : "string"
+        },
+        "assetID" : {
+          "type" : "string"
+        },
+        "dateUpdated" : {
+          "type" : "string"
+        },
+        "fitPartTypeID" : {
+          "type" : "string"
+        },
+        "isDeleted" : {
+          "type" : "string"
+        },
+        "isPTControlled" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "mandatoryPosition" : {
+          "type" : "string"
+        },
+        "roleFitCode" : {
+          "type" : "string"
+        },
+        "roleFitDescription" : {
+          "type" : "string"
+        },
+        "roleFitID" : {
+          "type" : "string"
+        },
+        "stateIfMissing" : {
+          "type" : "string"
+        },
+        "structurePosition" : {
+          "type" : "string"
+        }
+      }
+    },
+    "FleetIdents_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getFleetIdentsDetailsResponse" ],
+      "properties" : {
+        "getFleetIdentsDetailsResponse" : {
+          "$ref" : "#/definitions/getFleetIdentsDetailsResponse"
+        }
+      }
+    },
+    "JamesRepairActs" : {
+      "type" : "object",
+      "required" : [ "candidateSRAFlag", "deleteFlag", "faultID", "inspectionResult", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "plannedEndDate", "plannedStartDate", "raCondition", "raRepairLevel", "raStartDate", "raType", "repairActionComments", "repairActionCompletionDate", "repairActionDescription", "repairActionID", "repairSection", "repairSectionLocation", "repairedDuringInspection", "subSystem", "system", "workStatus" ],
+      "properties" : {
+        "candidateSRAFlag" : {
+          "type" : "string"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "faultID" : {
+          "type" : "string"
+        },
+        "inspectionResult" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "plannedEndDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "plannedStartDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "raCondition" : {
+          "type" : "string"
+        },
+        "raRepairLevel" : {
+          "type" : "string"
+        },
+        "raStartDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "raType" : {
+          "type" : "string"
+        },
+        "repairActionComments" : {
+          "type" : "string"
+        },
+        "repairActionCompletionDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "repairActionDescription" : {
+          "type" : "string"
+        },
+        "repairActionID" : {
+          "type" : "string"
+        },
+        "repairSection" : {
+          "type" : "string"
+        },
+        "repairSectionLocation" : {
+          "type" : "string"
+        },
+        "repairedDuringInspection" : {
+          "type" : "string"
+        },
+        "subSystem" : {
+          "type" : "string"
+        },
+        "system" : {
+          "type" : "string"
+        },
+        "workStatus" : {
+          "type" : "string"
+        }
+      }
+    },
+    "getMaintHistoryDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getMaintHistory" ],
+      "properties" : {
+        "getMaintHistory" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesMaintHistory"
+          }
+        }
+      }
+    },
+    "JamesRepActSparesUsed" : {
+      "type" : "object",
+      "required" : [ "deleteFlag", "isSpareConsumed", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "nsn", "quantityofItemsNotUsed", "quantityofItemsUsed", "repairActionDSID", "requiredNumber", "spareDescription", "spareUseID" ],
+      "properties" : {
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "isSpareConsumed" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "nsn" : {
+          "type" : "string"
+        },
+        "quantityofItemsNotUsed" : {
+          "type" : "string"
+        },
+        "quantityofItemsUsed" : {
+          "type" : "string"
+        },
+        "repairActionDSID" : {
+          "type" : "string"
+        },
+        "requiredNumber" : {
+          "type" : "string"
+        },
+        "spareDescription" : {
+          "type" : "string"
+        },
+        "spareUseID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "getAssetFleetIdentsDetails" : {
+      "type" : "object",
+      "required" : [ "getAssetFleetIdents" ],
+      "properties" : {
+        "getAssetFleetIdents" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesAssetFleetIdents"
+          }
+        }
+      }
+    },
+    "getPartTypeDetailsResponse" : {
+      "type" : "object",
+      "required" : [ "getPartType" ],
+      "properties" : {
+        "getPartType" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/JamesPartType"
+          }
+        }
+      }
+    },
+    "RoleFit_GET_response_1" : {
+      "type" : "object",
+      "required" : [ "getRoleFitDetailsResponse" ],
+      "properties" : {
+        "getRoleFitDetailsResponse" : {
+          "$ref" : "#/definitions/getRoleFitDetailsResponse"
+        }
+      }
+    },
+    "JamesEquipment" : {
+      "type" : "object",
+      "required" : [ "acState", "acStateDate", "adrCertDueDate", "adrComplaint", "alternateERM", "assetID", "colour", "custJAMOrgID", "custOPCOMOrgID", "custodianOrgID", "custodianUIN", "custodianUNIT", "dateLastOverhaul", "dateintoService", "deleteFlag", "dgvw", "equipmentFamilyGroup", "equipmentState", "erm", "gtw", "holderName", "holderOrgID", "holderUIN", "holdingJAMOrgID", "holdingOPCOMOrgID", "inusePlacement", "lastQueriedDate", "lfdwID", "maintenanceGroup", "mam", "nsn", "partTypeID", "platformBCIP", "platformBCIPBaseline", "readinessLevel", "serialNumber", "state", "storageArea", "storageLocation", "ulw", "usageCounterType", "usageCounterUnit", "warrantyExpirationDate" ],
+      "properties" : {
+        "acState" : {
+          "type" : "string"
+        },
+        "acStateDate" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "adrCertDueDate" : {
+          "type" : "string"
+        },
+        "adrComplaint" : {
+          "type" : "string"
+        },
+        "alternateERM" : {
+          "type" : "string"
+        },
+        "assetID" : {
+          "type" : "string"
+        },
+        "colour" : {
+          "type" : "string"
+        },
+        "custJAMOrgID" : {
+          "type" : "string"
+        },
+        "custOPCOMOrgID" : {
+          "type" : "string"
+        },
+        "custodianOrgID" : {
+          "type" : "string"
+        },
+        "custodianUIN" : {
+          "type" : "string"
+        },
+        "custodianUNIT" : {
+          "type" : "string"
+        },
+        "dateLastOverhaul" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "dateintoService" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "dgvw" : {
+          "type" : "string"
+        },
+        "equipmentFamilyGroup" : {
+          "type" : "string"
+        },
+        "equipmentState" : {
+          "type" : "string"
+        },
+        "erm" : {
+          "type" : "string"
+        },
+        "gtw" : {
+          "type" : "string"
+        },
+        "holderName" : {
+          "type" : "string"
+        },
+        "holderOrgID" : {
+          "type" : "string"
+        },
+        "holderUIN" : {
+          "type" : "string"
+        },
+        "holdingJAMOrgID" : {
+          "type" : "string"
+        },
+        "holdingOPCOMOrgID" : {
+          "type" : "string"
+        },
+        "inusePlacement" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "maintenanceGroup" : {
+          "type" : "string"
+        },
+        "mam" : {
+          "type" : "string"
+        },
+        "nsn" : {
+          "type" : "string"
+        },
+        "partTypeID" : {
+          "type" : "string"
+        },
+        "platformBCIP" : {
+          "type" : "string"
+        },
+        "platformBCIPBaseline" : {
+          "type" : "string"
+        },
+        "readinessLevel" : {
+          "type" : "string"
+        },
+        "serialNumber" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "storageArea" : {
+          "type" : "string"
+        },
+        "storageLocation" : {
+          "type" : "string"
+        },
+        "ulw" : {
+          "type" : "string"
+        },
+        "usageCounterType" : {
+          "type" : "string"
+        },
+        "usageCounterUnit" : {
+          "type" : "string"
+        },
+        "warrantyExpirationDate" : {
+          "type" : "string",
+          "format" : "date"
+        }
+      }
+    },
+    "JamesTypeUsageCounters" : {
+      "type" : "object",
+      "required" : [ "deleteFlag", "lastQueriedDate", "lfdwEffectiveEndDate", "lfdwEffectiveStartDate", "lfdwID", "parameterDesc", "partTypeID", "usageCategory", "usageParameterName" ],
+      "properties" : {
+        "deleteFlag" : {
+          "type" : "string"
+        },
+        "lastQueriedDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveEndDate" : {
+          "type" : "string"
+        },
+        "lfdwEffectiveStartDate" : {
+          "type" : "string"
+        },
+        "lfdwID" : {
+          "type" : "string"
+        },
+        "parameterDesc" : {
+          "type" : "string"
+        },
+        "partTypeID" : {
+          "type" : "string"
+        },
+        "usageCategory" : {
+          "type" : "string"
+        },
+        "usageParameterName" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
