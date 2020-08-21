@@ -3,8 +3,7 @@
 		"_postman_id": "edba2aaf-42cb-4c7b-b4d6-bdeb6bd6c64c",
 		"name": "Mil-Equipment",
 		"description": "Service to retrieve Military Land Equipment details. Resource Details - \n /actSecUsage\n /activity\n /assetFleetIdents\n /calculatedOperParam\n /fleetIdents\n /instances\n /MODCodes\n /MROFault\n /MROMaintFault\n /maintAssoc\n /maintEnvHistory\n /maintHistory\n /nonEventUsage\n /organisation\n /partType\n /RATime\n /repairActSparesUsed\n/repairActs\n /supplyIssueID\n /typeUsageCounters\n /workRequest\n",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"version": "1.0"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
